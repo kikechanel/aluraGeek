@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/image 1.svg" alt="hearts">
+        <h1>AluraGeek</h1>
+    </header>
+    <main class="sectionContainer">
+        <section class="products">
+            <h1>MIS PRODUCTOS</h1>
+            <div data-product class="card-container"></div>
+        </section>
+
+        <section class="addProducts">
+            <h1>AGREGAR PRODUCTO</h1>
+            <form class="formulary" data-form>
+                <div class="formulary__inputs">
+                    <input class="formulary__inputs__input" type="text" placeholder="nombre..." data-name required>
+                    <input class="formulary__inputs__input" type="text" placeholder="precio..." data-price required>
+                    <label for="imageInput" class="custom-file-label">Imagen...</label>
+                    <input  class="formulary__inputs__input" type="file" placeholder="imagen..." id="imageInput" accept="image/*" data-image required >
+                </div>
+                <div class="botones">
+                    <button class="botones__enviar" type="submit">Enviar</button>
+                    <button class="botones__limpiar" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container-logo">
+            <img src="./img/image 1.svg" alt="hearts" class="imageFooter">
+            <h1>AluraGeek</h1>
+        </div>
+        <p class="by">DESARROLLADOPOR Kike Chanel Villanueva Soliz</p>
+        <p class="alura">ALURA LATAM - 2024</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

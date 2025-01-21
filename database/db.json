@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "2938",
+      "name": "dino2",
+      "price": 12.4,
+      "image": "./img/dino.jpeg"
+    },
+    {
+      "id": "c965",
+      "name": "perro1",
+      "price": 47.3,
+      "image": "./img/perro.jpg"
+    },
+    {
+      "id": "c1e5",
+      "name": "gato1",
+      "price": 124,
+      "image": "./img/gato.jpeg"
+    },
+    {
+      "id": "f724",
+      "name": "perro2",
+      "price": 124.6,
+      "image": "./img/perro.jpg"
+    },
+    {
+      "id": "2c1a",
+      "name": "gato2",
+      "price": 14.6,
+      "image": "./img/gato.jpeg"
+    },
+    {
+      "id": "c14b",
+      "name": "gato3",
+      "price": 14.6,
+      "image": "./img/gato.jpeg"
+    },
+    {
+      "id": "5604",
+      "name": "dino1",
+      "price": 57.6,
+      "image": "./img/dino.jpeg"
+    },
+    {
+      "id": "3a2d",
+      "name": "perro3",
+      "price": 14.6,
+      "image": "./img/perro.jpg"
+    }
+  ]
+}

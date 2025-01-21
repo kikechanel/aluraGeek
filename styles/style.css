@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Press+Start+2P&display=swap');
+
+
+*{
+    box-sizing:content-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red;  */
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P';
+}
+
+main {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;    
+    margin: 0;
+    
+}
+
+header{
+    background-color: #03318C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;  
+    padding: 1rem;  
+}
+
+.sectionContainer{
+    display: flex;
+    align-content: center;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.products h1{
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.card-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9747FF;
+    color:#fff;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+
+/* card-container img */
+.imageProduct{
+    width: 10rem;
+    height: 10rem;
+    padding:0.5rem;
+    border-radius: 20px;
+}
+
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.delete-button{
+    width: 25px;
+    height: 25px;
+}
+
+
+.addProducts{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.addProducts h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+
+
+.formulary__inputs{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-bottom: 1rem;
+    position: relative;      
+}
+
+#imageInput {
+    display: none;
+}
+
+/* #imageInput:focus + .custom-file-label,
+#imageInput:not(:placeholder-shown) + .custom-file-label {
+    top: -10px; 
+    font-size: 0.8rem; 
+    color: #007BFF;
+} */
+
+.custom-file-label{
+    text-align: left;
+    padding: 0.3rem;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(107, 107, 107);
+    border-color: #03318C;
+    border-radius: 30PX;
+    padding:0.7rem;
+}
+
+.formulary__inputs__input{
+    border-color: #03318C;
+    border-radius: 30px;  
+    height: 30px;  
+    align-items: center;
+    justify-content: center;
+    padding:0.5rem;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.botones__enviar{
+    background-color: #03318C;
+    color: #fff;
+}
+
+.botones__limpiar{
+    color: #03318C;
+}
+
+.botones__enviar ,
+.botones__limpiar{
+    display: flex;
+    flex-direction: row;
+    width:47%;
+    gap :0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 30px;
+    border-color: #03318C;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+    
+}
+
+.footer {
+    background-color: #03318C; /* Ajusta los colores según tu diseño */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer p{
+    font-size: 10px;
+    padding-left: 1rem;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*RESPONSIVE*/
+
+@MEDIA screen and (max-width: 768px){
+
+    .header{
+        font-size: 13px;          
+        margin-bottom: 4rem;
+    }
+
+    main > .products {
+        order: 2; 
+    }
+    
+    main > .addProducts {
+        order: 1; 
+    }
+
+    .addProducts{
+        margin-bottom: 4rem;        
+    }
+
+    .products{
+        max-width: 24rem;
+        margin-bottom: 4rem;
+    }
+
+    .imageProduct{
+        width: 7rem;
+        height: 7rem;
+        padding:0.5rem;        
+    }
+
+    .nameProduct{
+        font-size: 12px;
+    }
+
+    .price{
+        margin: 0.2rem;
+        font-size: 12px;
+        
+    }
+
+    .delete-button{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer {
+        padding: 10px; 
+        height: 8rem;        
+    }
+    
+    .footer-container-logo {
+        font-size: 10px;
+        
+    }
+    
+    .imageFooter{
+        width: auto;
+        height: 2.5rem; 
+
+    }
+
+    .footer p{
+        font-size: 8px;
+        padding-left: 0.5rem;
+    }
+}
